@@ -24,7 +24,13 @@ function Teams() {
           {teams.map(team => (
             <tr key={team._id}>
               <td>{team.name}</td>
-              <td>{team.members}</td>
+              <td>
+                <ul>
+                  {team.members.map(member => (
+                    <li key={member._id}>{member.username}</li>
+                  ))}
+                </ul>
+              </td>
             </tr>
           ))}
         </tbody>
