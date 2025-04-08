@@ -555,8 +555,8 @@ python monafit-tracker/backendmanage.py monafit-tracker/backend/populate_db
 ```text
 Let's do the following step by step
 
-- Update #file:monafit-tracker/backend/monafit_tracker/views.py to replace the return for the rest api url endpiints with the codespace url http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev for django
-- Replace <codespace-name> with [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]
+- Update #file:monafit-tracker/backend/monafit_tracker/views.py to replace the return for the rest api url endpiints with the codespace url http://obscure-lamp-p7qqwqrwqx5h67r7-8000.app.github.dev for django
+- Replace <codespace-name> with obscure-lamp-p7qqwqrwqx5h67r7
 - Run the Django server
 
 HTTP 200 OK
@@ -599,7 +599,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev/'
+    base_url = 'http://obscure-lamp-p7qqwqrwqx5h67r7-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',
