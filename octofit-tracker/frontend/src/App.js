@@ -13,8 +13,8 @@ function App() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              <img src="/octofitapp-small.png" alt="OctoFit Logo" className="logo" />
+            <Link className="navbar-brand d-flex align-items-center" to="/">
+              <img src="/octofitapp-small.png" alt="OctoFit Logo" className="logo me-2" />
               OctoFit Tracker
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
